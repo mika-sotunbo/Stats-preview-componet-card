@@ -1,0 +1,136 @@
+/* *{
+     box-sizing: border-box; 
+} */
+body{
+    background-color: #000024;
+    color: white;
+    font-size: 0.9em;
+}
+.container{
+/* border: 2px solid white; */
+display: flex;
+/* border: 1px; */
+border-radius: 5px;
+ margin: 5em 5em 0 5em;
+/* word-wrap: break-word; */
+justify-content: center;
+/* height: 70vh; */
+width: 70vw;
+/* flex-wrap: wrap; */
+}
+   
+
+.for-text{
+    border: 1px ;
+     height:70vh ;
+     width: 30vw;
+     /* padding: 1em;   */
+    background-color: #00003d;
+    word-wrap: break-word;
+flex-basis: 40em;
+flex-grow: 1;
+flex-wrap: wrap;
+}
+.for-text .text-insight, .for-text .txt, .for-text .last{
+    margin: 5em;
+}
+.for-img{
+border: 1px black solid;
+ height: 70vh;
+width:30vw;
+background-image:url("images/image-header-desktop.jpg");
+background-blend-mode: overlay;
+background-color: #00003d;
+background-size: cover;
+flex-basis:40em;
+flex-grow: 1;
+}
+.insight{
+    color: blue;
+} 
+.last{
+    display: flex;
+    justify-content:space-around;
+    /* margin-top: 12em; */
+}
+.container .last .details{
+    display: flex;
+    flex-direction: column;
+    
+}
+.attribution { font-size: 11px; text-align: center;
+margin: 5em; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+/* Media Queries */
+/* @media screen and  (max-width: 1024px) {
+    .container{
+        /* display: flex; 
+        flex-direction: column;
+        flex-wrap: wrap; */
+        /* display flex; */
+        /* flex-direction: column;   */
+              /* font-size: 4rem; 
+         }
+         
+     }
+     @media screen and (max-width: 900px) {
+        .container .last{
+            display: flex;
+            flex-direction: column;
+            align-content: space-between;
+        }
+    }
+    
+    @media screen  and (max-width: 100em){
+
+    .for-text{
+
+    }
+
+}
+
+/* @media screen and (max-width: 900px) {
+    body{
+        font-size: 0.6em;
+    }
+} */
+@media screen and  (max-width: 50em){
+body{
+    font-size: 0.65em;
+}
+.container{
+    display: flex;
+    flex-direction: column-reverse;
+    margin: 20em;
+    border-radius: 15em;
+    
+}
+.for-img{
+    /* height: 20px; */
+    flex-basis: 10em;
+}
+.for-text{
+    /* flex-shrink :1; */
+    font-size: 0.8em;
+    /* word-break: break-all; */
+    word-wrap: break-word;
+    flex-basis: 20em;
+
+}
+.last{
+    display:flex;
+    flex-direction:column;
+    /* align-items: stretch; */
+    /* align-content: space-around; */
+}
+.details{
+    padding: 2px;
+}
+} 
+    @media screen and (max-width:64em) {
+        .details{
+            padding: 3px;
+            margin-bottom:14px;
+        }
+    }
